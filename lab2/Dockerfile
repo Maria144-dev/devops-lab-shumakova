@@ -15,7 +15,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application file
-COPY ./app.py .
+COPY /lab2/app.py .
 
 # Create user with UID 1000
 RUN useradd -m -u 1000 appuser
